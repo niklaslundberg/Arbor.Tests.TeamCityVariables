@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Channels;
 using Serilog;
 
 namespace TeamCityVariables
@@ -14,6 +15,9 @@ namespace TeamCityVariables
 
             logger.Information("##teamcity[dynamicParameterLogger 'logger1']");
 
+            logger.Information("Regular logger");
+
+            Console.WriteLine("Regular console");
             Console.WriteLine("##teamcity[dynamicParameterConsole 'console1']");
 
             return 0;
