@@ -16,6 +16,7 @@ namespace TeamCityVariables
             var value = "logger2";
             logger.Information("##teamcity[dynamicParameterLogger 'logger1']");
             logger.Information("##teamcity[setParameter name='dynamicParameterLogger2' value='{Value}']", value);
+            logger.Information("##teamcity[setParameter name='env.dynamicEnvParameterLogger3' value='{Value}']", "logger3");
 
             logger.Information("Regular logger");
 
