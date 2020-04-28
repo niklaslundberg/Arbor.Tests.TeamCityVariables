@@ -24,6 +24,7 @@ namespace TeamCityVariables
             Console.WriteLine("##teamcity[setParameter name='dynamicParameterConsole2' value='console2']");
             Console.WriteLine("##teamcity[setParameter name='env.dynamicParameterConsole3' value='console3']");
             Console.WriteLine("##teamcity[setParameter name='system.dynamicParameterConsole4' value='console4']");
+            Console.WriteLine("a prefix ##teamcity[setParameter name='system.dynamicParameterConsole5' value='console5'] suffix");
 
             return 0;
         }
