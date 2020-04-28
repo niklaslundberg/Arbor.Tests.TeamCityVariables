@@ -14,7 +14,7 @@ namespace TeamCityVariables
 
             logger.Information("##teamcity[dynamicParameterLogger 'logger1']");
 
-            logger.Information("##teamcity[dynamicParameterConsole 'console1']");
+            Console.WriteLine("##teamcity[dynamicParameterConsole 'console1']");
 
             return 0;
         }
